@@ -1,0 +1,184 @@
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:04:28 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:07:49 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:08:28 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:10:10 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:10:40 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:11:27 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:13:18 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:16:16 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:17:13 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:18:11 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:18:24 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:19:05 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:20:48 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:23:23 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:23:38 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:25:38 
+Success: undefined - Message: Cannot read properties of undefined (reading 'chain')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:25:48 
+Success: undefined - Message: Cannot read properties of undefined (reading 'data')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:26:02 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:27:10 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:28:27 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:28:33 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:32:56 
+Success: undefined - Message: BlockchainModel.getLastBlock is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:34:09 
+Success: undefined - Message: BlockchainModel.getLastBlock is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:35:39 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:37:06 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:38:08 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:38:27 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:43:52 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:44:08 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:44:20 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:44:31 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:44:42 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:44:44 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:45:02 
+Success: undefined - Message: Invalid left-hand side in assignment
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 11:54:41 
+Success: undefined - Message: "[object Object]" is not valid JSON
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 12:05:12 
+Success: undefined - Message: Date.now is not a constructor
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 14:47:47 
+Success: undefined - Message: Cannot read properties of undefined (reading 'data')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 14:48:12 
+Success: undefined - Message: Cannot read properties of undefined (reading 'data')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 15:00:10 
+Success: undefined - Message: Cannot read properties of undefined (reading 'data')
+Method: POST URL: /api/v1/members/register-node
+Date: 2024-05-05 
+Time: 19:30:16 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/members/register-node
+Date: 2024-05-05 
+Time: 19:31:04 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/members/register-node
+Date: 2024-05-05 
+Time: 19:31:09 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/members/register-node
+Date: 2024-05-05 
+Time: 19:32:01 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/members/register-node
+Date: 2024-05-05 
+Time: 19:32:15 
+Success: false - Message: undefined
+Method: GET URL: /api/v1/blockchain/concensus
+Date: 2024-05-05 
+Time: 20:20:09 
+Success: false - Message: undefined
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-05 
+Time: 21:01:56 
+Success: undefined - Message: this.chain.at is not a function
