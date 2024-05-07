@@ -29,7 +29,6 @@ app.all("*", (req, res, next) => {
 });
 
 app.use(errorHandler);
-
 const PORT = process.argv[2] || process.env.PORT || 5010;
 
 app.listen(PORT, () => {

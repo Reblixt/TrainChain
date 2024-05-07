@@ -16,13 +16,18 @@ export const getBlockchain = (req, res, next) => {
 export const createBlock = (req, res, next) => {
   const lastBlock = blockchain.getLastBlock();
   const data = req.body;
-  console.log(data);
-  const timestamp = Date.now();
+  const { nonce, difficulty, timestamp } = blockchain.proofOfWork(
+    lastBlock.currentHash,
+    data,
+  );
+  //  const timestamp = Date.now();
 
   const currentBlockHash = blockchain.hashABlock(
     timestamp,
     lastBlock.currentHash,
     data,
+    nonce,
+    difficulty,
   );
 
   const block = blockchain.createBlock(
@@ -30,6 +35,7 @@ export const createBlock = (req, res, next) => {
     lastBlock.currentHash,
     currentBlockHash,
     data,
+    difficulty,
   );
 
   res.status(201).json(new ResponseModel({ statusCode: 201, data: block }));
@@ -45,22 +51,25 @@ export const synchronizeChain = (req, res, next) => {
     if (response.ok) {
       const result = await response.json();
 
+      console.log("result form fetch", result.data);
       if (result.data.chain.length > maxLength) {
         maxLength = result.data.chain.length;
+        console.log("New max length found", maxLength);
         longestChain = result.data.chain;
+        console.log("Longest chain found", longestChain);
       }
 
       if (
         !longestChain ||
-        (longestChain && !blockchain.validateChain(longestChain))
+        (longestChain && blockchain.validateChain(longestChain))
       ) {
         console.log("Current chain is already the longest chain");
-        writeFile(folder, fileName, blockchain);
-        console.log(blockchain.chain);
+        writeFile(folder, fileName, blockchain.chain);
+        console.log(blockchain);
       } else {
         blockchain.chain = longestChain;
-        writeFile(folder, fileName, blockchain);
-        console.log(blockchain.chain);
+        writeFile(folder, fileName, blockchain.chain);
+        console.log(blockchain);
       }
     }
   });

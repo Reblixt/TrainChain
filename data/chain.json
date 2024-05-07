@@ -1,10 +1,51 @@
 [
   {
-    "timestamp": 1714737212380,
+    "timestamp": 1715026646671,
     "blockNumber": 1,
     "lastHash": "0",
-    "currentHash": "0",
-    "data": []
+    "currentHash": "7aa1ef9a13894aeb5c4902262ad85fbbfd5eff5584762db0267c95ae2e1d3176",
+    "data": { "data": "Genesis block" },
+    "difficulty": "3"
+  },
+  {
+    "timestamp": 1715027400034,
+    "blockNumber": 2,
+    "lastHash": "7aa1ef9a13894aeb5c4902262ad85fbbfd5eff5584762db0267c95ae2e1d3176",
+    "currentHash": "00a44f5d0b2d2de646ae1b83fabe9ede0c23b822e9c19dd3c75bf792c07a772c",
+    "data": { "data": "Chitakabröd" },
+    "difficulty": 2
+  },
+  {
+    "timestamp": 1715027400686,
+    "blockNumber": 3,
+    "lastHash": "00a44f5d0b2d2de646ae1b83fabe9ede0c23b822e9c19dd3c75bf792c07a772c",
+    "currentHash": "00054b61a61c228a5e3f737b422b0a2e4e8f269a8f2a2c99ba6f5db7e5d5f1db",
+    "data": { "data": "Chitakabröd" },
+    "difficulty": 3
+  },
+  {
+    "timestamp": 1715027457839,
+    "blockNumber": 4,
+    "lastHash": "00054b61a61c228a5e3f737b422b0a2e4e8f269a8f2a2c99ba6f5db7e5d5f1db",
+    "currentHash": "00efc0404845b60adad3491d6934652a2c6f4b34c942a33c6ab7af739f347e9d",
+    "data": { "data": "Chitakabröd" },
+    "difficulty": 2
+  },
+  {
+    "timestamp": 1715027458542,
+    "blockNumber": 5,
+    "lastHash": "00efc0404845b60adad3491d6934652a2c6f4b34c942a33c6ab7af739f347e9d",
+    "currentHash": "0004c201708b0017b20aa9a04b33753b44146c612f7d07de69046e241a297bc4",
+    "data": { "data": "Chitakabröd" },
+    "difficulty": 3
+  },
+  {
+    "timestamp": 1715027459877,
+    "blockNumber": 6,
+    "lastHash": "0004c201708b0017b20aa9a04b33753b44146c612f7d07de69046e241a297bc4",
+    "currentHash": "0000a6599b2d9ee11257a8319de9501669a0b3c5f3987e4d5477a264e0c934f9",
+    "data": { "data": "Chitakabröd" },
+    "difficulty": 4
   }
 ]
 

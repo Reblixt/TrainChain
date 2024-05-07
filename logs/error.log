@@ -182,3 +182,211 @@ Method: POST URL: /api/v1/blockchain/mine
 Date: 2024-05-05 
 Time: 21:01:56 
 Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 12:25:14 
+Success: undefined - Message: Cannot access 'data' before initialization
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 12:25:16 
+Success: undefined - Message: Cannot access 'data' before initialization
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 13:19:35 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 13:28:43 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 13:28:53 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 13:28:54 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 13:34:48 
+Success: undefined - Message: Cannot read properties of undefined (reading 'at')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:37:51 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:37:51 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:38:04 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:39:11 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:39:56 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:40:00 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:50:16 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:50:23 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:50:28 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:50:37 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:53:53 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:53:54 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:53:57 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:54:35 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:55:25 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 14:55:39 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 15:25:03 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 15:25:06 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 15:28:34 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 15:28:57 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 15:28:58 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:03:45 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:04:10 
+Success: undefined - Message: Cannot read properties of undefined (reading 'currentHash')
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:04:28 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:04:40 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:17:37 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:17:43 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:18:47 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:18:48 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 16:18:48 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:26:40 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:26:41 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:26:49 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:29:08 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:29:33 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:30:20 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:30:52 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:30:53 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:31:50 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:32:45 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:32:56 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:33:10 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:33:11 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:33:53 
+Success: undefined - Message: this.chain.at is not a function
+Method: POST URL: /api/v1/blockchain/mine
+Date: 2024-05-06 
+Time: 21:35:31 
+Success: undefined - Message: this.chain.at is not a function
