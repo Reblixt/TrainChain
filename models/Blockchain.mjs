@@ -1,6 +1,11 @@
 import Block from "./Block.mjs";
 import fs from "fs";
 import { createAHash } from "../utilities/crypto-lib.mjs";
+import { writeFile } from "../utilities/fileHandler.mjs";
+
+const folder = "data";
+const fileName = "chain.json";
+
 let chainFile = null;
 try {
   const data = fs.readFileSync("./data/chain.json", "utf-8");
@@ -26,19 +31,21 @@ export default class Blockchain {
     this.nodeMembers = (chainFile && chainFile.memberNodes) || [];
     this.nodeUrl = process.argv[3];
     !chainFile &&
-      this.createBlock(Date.now(), "0", "0", { data: "Genesis block" }, 3);
+      this.createBlock(Date.now(), "0", "0", { data: "Genesis block" }, 1, 3);
   }
 
-  createBlock(timestamp, lastHash, currentHash, data, difficulty) {
+  createBlock(timestamp, lastHash, currentHash, data, nonce, difficulty) {
     const block = new Block(
       timestamp,
       this.chain.length + 1,
       lastHash,
       currentHash,
       data,
+      nonce,
       difficulty,
     );
     this.chain.push(block);
+    writeFile(folder, fileName, this.chain);
     return block;
   }
 
@@ -78,9 +85,6 @@ export default class Blockchain {
     let { difficulty, timestamp } = lastBlock;
     const timestampDifference = currentTimestamp - timestamp;
 
-    // console.log("Difference timestamp: ", timestampDifference);
-    // console.log("Wanted MINE_RATE ", MINE_RATE);
-
     if (timestampDifference > MINE_RATE) {
       return +difficulty - 1;
     } else {
@@ -101,19 +105,8 @@ export default class Blockchain {
         block.nonce,
         block.difficulty,
       );
-
       if (hash !== block.currentHash) isValid = false;
       if (block.lastHash !== prevBlock.currentHash) isValid = false;
-      if (
-        block.currentHash.substring(0, block.difficulty) !==
-        "0".repeat(block.difficulty)
-      )
-        isValid = false;
-      const expectedDifficulty = this.adjustDifficulty(
-        prevBlock,
-        block.timestamp,
-      );
-      if (block.difficulty !== expectedDifficulty) isValid = false;
     }
     return isValid;
   }

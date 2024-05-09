@@ -35,10 +35,47 @@ export const createBlock = (req, res, next) => {
     lastBlock.currentHash,
     currentBlockHash,
     data,
+    nonce,
     difficulty,
   );
 
+  blockchain.nodeMembers.forEach(async (url) => {
+    const body = block;
+    await fetch(`${url}${endpoint.blockchain}/block/updateChain`, {
+      method: "POST",
+      body: JSON.stringify(body),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  });
+
   res.status(201).json(new ResponseModel({ statusCode: 201, data: block }));
+};
+
+export const updateChain = (req, res, next) => {
+  const block = req.body;
+  const lastBlock = blockchain.getLastBlock();
+  const hash = lastBlock.currentHash === block.lastHash;
+  const blockNr = lastBlock.blockNumber + 1 === block.blockNumber;
+
+  if (hash && blockNr) {
+    blockchain.chain.push(block);
+    console.log("Block added to chain", blockchain.chain);
+    res.status(201).json(
+      new ResponseModel({
+        statusCode: 201,
+        data: { message: "Block is now added and distributed" },
+      }),
+    );
+  } else {
+    res.status(400).json(
+      new ResponseModel({
+        statusCode: 400,
+        data: { message: "Invalid block" },
+      }),
+    );
+  }
 };
 
 export const synchronizeChain = (req, res, next) => {
@@ -61,15 +98,14 @@ export const synchronizeChain = (req, res, next) => {
 
       if (
         !longestChain ||
-        (longestChain && blockchain.validateChain(longestChain))
+        (longestChain && !blockchain.validateChain(longestChain))
       ) {
         console.log("Current chain is already the longest chain");
         writeFile(folder, fileName, blockchain.chain);
-        console.log(blockchain);
       } else {
         blockchain.chain = longestChain;
+        console.log("Chain updated", blockchain.chain);
         writeFile(folder, fileName, blockchain.chain);
-        console.log(blockchain);
       }
     }
   });

@@ -5,10 +5,11 @@
   "main": "server.mjs",
   "scripts": {
     "test": "vitest",
+    "test:ui": "vitest --ui",
     "dev": "NODE_ENV=development nodemon --env-file=config/config.env server.mjs",
-    "node-1": "nodemon --env-file=config/config.env server.mjs 3001 http://localhost:3001 ",
-    "node-2": "nodemon --env-file=config/config.env server.mjs 3002 http://localhost:3002 ",
-    "node-3": "nodemon --env-file=config/config.env server.mjs 3003 http://localhost:3003 "
+    "node-1": "node --env-file=config/config.env server.mjs 3001 http://localhost:3001 ",
+    "node-2": "node --env-file=config/config.env server.mjs 3002 http://localhost:3002 ",
+    "node-3": "node --env-file=config/config.env server.mjs 3003 http://localhost:3003 "
   },
   "author": "Carl Klöfverskjöld",
   "license": "MIT",

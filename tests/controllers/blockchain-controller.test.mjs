@@ -10,6 +10,7 @@ describe("Blockchain Controller Test", () => {
       },
     });
     const data = await response.json();
+    console.log(data);
     expect(response.status).toBe(200);
     expect(data.success).toBe(true);
     expect(data.statusCode).toBe(200);

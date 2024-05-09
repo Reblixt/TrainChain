@@ -1,5 +1,13 @@
 export default class Block {
-  constructor(timestamp, blockNumber, lastHash, currentHash, data, difficulty) {
+  constructor(
+    timestamp,
+    blockNumber,
+    lastHash,
+    currentHash,
+    data,
+    nonce,
+    difficulty,
+  ) {
     if (!timestamp || !lastHash || !currentHash || !data) return;
     if (typeof timestamp !== "number") return;
     if (typeof blockNumber !== "number") return;
@@ -12,6 +20,7 @@ export default class Block {
     this.lastHash = lastHash;
     this.currentHash = currentHash;
     this.data = data;
+    this.nonce = nonce;
     this.difficulty = difficulty || process.env.DIFFICULTY;
   }
 }
