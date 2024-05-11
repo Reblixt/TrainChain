@@ -1,7 +1,8 @@
 import express from "express";
 import blockchainRouter from "./routes/blockchain-route.mjs";
-import { endpoint } from "./config/settings.mjs";
+import transactionRouter from "./routes/transaction-route.mjs";
 import memberRouter from "./routes/member-route.mjs";
+import { endpoint } from "./config/settings.mjs";
 import { fileURLToPath } from "url";
 import path from "path";
 import ErrorResponse from "./utilities/ResponseModel.mjs";
@@ -19,10 +20,10 @@ if (process.env.NODE_ENV === "development") {
   console.log("From env file: ", process.env.NODE_ENV);
 }
 
-//console.log(blockchain.chain);
 app.use(express.json());
 app.use(endpoint.blockchain, blockchainRouter);
 app.use(endpoint.members, memberRouter);
+app.use(endpoint.transactions, transactionRouter);
 
 app.all("*", (req, res, next) => {
   next(new ErrorResponse(`Can't find ${req.originalUrl} on this server`, 404));

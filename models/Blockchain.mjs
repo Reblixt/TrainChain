@@ -1,4 +1,5 @@
 import Block from "./Block.mjs";
+import Transaction from "./Transaction.mjs";
 import fs from "fs";
 import { createAHash } from "../utilities/crypto-lib.mjs";
 import { writeFile } from "../utilities/fileHandler.mjs";
@@ -29,6 +30,7 @@ export default class Blockchain {
   constructor() {
     this.chain = (chainFile && chainFile) || [];
     this.nodeMembers = (chainFile && chainFile.memberNodes) || [];
+    this.pendingTransactions = [];
     this.nodeUrl = process.argv[3];
     !chainFile &&
       this.createBlock(Date.now(), "0", "0", { data: "Genesis block" }, 1, 3);
@@ -44,9 +46,19 @@ export default class Blockchain {
       nonce,
       difficulty,
     );
+    this.pendingTransactions = [];
     this.chain.push(block);
     writeFile(folder, fileName, this.chain);
     return block;
+  }
+
+  createTransaction(amount, sender, recipient) {
+    return new Transaction(amount, sender, recipient);
+  }
+
+  addTransaction(transaction) {
+    this.pendingTransactions.push(transaction);
+    return this.getLastBlock().blockNumber + 1;
   }
 
   getLastBlock() {
@@ -105,12 +117,11 @@ export default class Blockchain {
         block.nonce,
         block.difficulty,
       );
+      console.log("Hash: ", hash, i);
+      console.log("Block hash: ", block.currentHash, i);
       if (hash !== block.currentHash) isValid = false;
       if (block.lastHash !== prevBlock.currentHash) isValid = false;
     }
     return isValid;
   }
 }
-
-// Efter consesus har utförts efter fler blockkedjor. Då uppdateras json blockkedjan med den längsta blockkedjan.
-// Så på detta sätt så ska inte json files updateras när en ny block skapas. Utan efter consesus.

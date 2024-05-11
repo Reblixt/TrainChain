@@ -6,9 +6,15 @@ export const http = {
 };
 
 export const endpoint = {
+  // blockchain routes
   blockchain: "/api/v1/blockchain",
   mine: "/api/v1/blockchain/mine",
 
+  // member routes
   members: "/api/v1/members",
   registerNode: "/api/v1/members/register-node",
+
+  // transaction routes
+  transactions: "/api/v1/transactions",
+  transaction: "/api/v1/transactions/transaction",
 };

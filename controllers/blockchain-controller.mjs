@@ -13,9 +13,9 @@ export const getBlockchain = (req, res, next) => {
     .json(new ResponseModel({ statusCode: 200, data: blockchain }));
 };
 
-export const createBlock = (req, res, next) => {
+export const createBlock = async (req, res, next) => {
   const lastBlock = blockchain.getLastBlock();
-  const data = req.body;
+  const data = blockchain.pendingTransactions;
   const { nonce, difficulty, timestamp } = blockchain.proofOfWork(
     lastBlock.currentHash,
     data,
@@ -48,6 +48,16 @@ export const createBlock = (req, res, next) => {
         "Content-Type": "application/json",
       },
     });
+  });
+
+  const reward = { amount: 3, sender: "0000", recipient: blockchain.nodeUrl };
+
+  await fetch(`${blockchain.nodeUrl}${endpoint.transaction}/broadcast`, {
+    method: "POST",
+    body: JSON.stringify(reward),
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 
   res.status(201).json(new ResponseModel({ statusCode: 201, data: block }));
